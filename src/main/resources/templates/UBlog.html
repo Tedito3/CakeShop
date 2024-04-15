@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Include any necessary CSS and JavaScript libraries here -->
+</head>
+<body>
+    <div class="container">
+        <form id="order-form" action="/orderRegister" method="POST">
+            <div class="form-group">
+                <label for="order-clientName">Client Name</label>
+                <input type="text" class="form-control" id="order-clientName" name="clientName" placeholder="Client Name">
+            </div>
+            <div class="form-group">
+                <label for="order-cakeName">Cake Name</label>
+                <input type="text" class="form-control" id="order-cakeName" name="cakeName" placeholder="Cake Name">
+            </div>
+            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="order-pieces">Pieces</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="pieces" id="order-pieces" class="form-control">
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="40">40</option>
+                                            <option value="60">60</option>
+                                            <option value="80">80</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                    </div>
+                                </div>
+            </div>
+            <div class="form-group">
+                <label for="order-orderNote">Order Note</label>
+                <input type="text" class="form-control" id="order-orderNote" name="orderNote" placeholder="Order Note">
+            </div>
+            <div>
+				<label for="orderDate">Select order date:</label>
+    			<input type="date" id="orderDate" name="orderDate">
+			</div>
+            <div class="form-group">
+                <label for="order-totalAmount">Total Amount</label>
+                <input type="number" class="form-control" id="order-totalAmount" name="totalAmount" placeholder="Total Amount" step="0.01" min="0">
+            </div>
+            <button type="submit" form="order-form" class="btn btn-success">Регистрирай</button>
+        </form>
+    </div>
+</body>
+</html>
